@@ -12,6 +12,20 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        progressFill: "progressFill 3s linear forwards",
+        moveLine: "moveLine 1.5s linear infinite",
+      },
+      keyframes: {
+        progressFill: {
+          from: { width: "0%" },
+          to: { width: "100%" },
+        },
+        moveLine: {
+          from: { "background-position": "0 0" },
+          to: { "background-position": "200% 0" },
+        },
+      },
     },
   },
   plugins: [],
